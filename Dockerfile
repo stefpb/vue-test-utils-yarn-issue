@@ -18,7 +18,7 @@ RUN yarn add vue
 RUN yarn add -D vitest happy-dom
 
 # this commands comes from https://github.com/vuejs/test-utils
-RUN yarn add @vue/test-utils@2.4.0 --dev
+RUN yarn add @vue/test-utils@2.4.1 --dev
 
 COPY example.test.ts .
 

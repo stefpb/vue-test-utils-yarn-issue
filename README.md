@@ -1,9 +1,5 @@
-# issue with @vue/test-utils@2.4.0
+# issue with @vue/test-utils@2.4.0 and 2.4.1
 
-- execute `docker build . -t vuetesting`
-- execute `docker run -it vuetesting`
-- everything is ok
-- go to `Dockerfile` and change in line the version of `@vue/test-utils` to `2.4.0`
 - execute `docker build . -t vuetesting`
 - execute `docker run -it vuetesting`
 
@@ -56,3 +52,8 @@ Serialized Error: {
    Start at  16:15:05
    Duration  894ms (transform 51ms, setup 0ms, collect 0ms, tests 0ms, environment 198ms, prepare 124ms)
 ```
+
+- go to `Dockerfile` and change in line the version of `@vue/test-utils` to `2.3.2` (version before 2.4.0)
+- execute `docker build . -t vuetesting`
+- execute `docker run -it vuetesting`
+- everything is ok
